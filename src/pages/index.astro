@@ -5,21 +5,21 @@ import Card from '../components/Card.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Label from '../components/Label.astro'
 import SkillLayout from '../components/SkillLayout.astro'
-import PostPreview from '@/components/blog/PostPreview.astro'
+// import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
 import profilePic from '../assets/profile.jpg'
 
-import { getAllPosts, sortMDByDate } from '@/utils'
+// import { getAllPosts, sortMDByDate } from '@/utils'
 
 const languages = ['lorem', 'ipsum']
 const frontend = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
 const backend = ['lorem', 'ipsum', 'lorem', 'ipsum']
 const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
 
-const MAX_POSTS = 10
-const allPosts = await getAllPosts()
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
+// const MAX_POSTS = 10
+// const allPosts = await getAllPosts()
+// const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 ---
 
 <PageLayout meta={{ title: 'Home' }}>
@@ -67,19 +67,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				My research in <b>political science</b> mainly pertains to the history of political thought and what I call "computational political theory" (Natural Language Processing + Network Analysis + Political Theory); My research in <b>economics</b> focuses on empirical, text-analytic studies of monopsony and collective bargaining in modern and historical labor markets.
 			</p>
 		</Section>
-		{
-			allPostsByDate.length > 0 && (
-				<Section title='Posts'>
-					<ul class='flex flex-col gap-y-2'>
-						{allPostsByDate.map((p) => (
-							<li class='flex flex-col gap-x-2 sm:flex-row'>
-								<PostPreview post={p} />
-							</li>
-						))}
-					</ul>
-				</Section>
-			)
-		}
 
 		<Section title='Experience'>
 			<Card
