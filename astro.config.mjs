@@ -14,6 +14,7 @@ import icon from 'astro-icon'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://jjacobs.me',
+	base: 'homepage-astro',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
