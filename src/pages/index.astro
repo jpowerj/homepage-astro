@@ -2,6 +2,9 @@
 import PageLayout from '../layouts/BaseLayout.astro'
 import Section from '../components/Section.astro'
 import Card from '../components/Card.astro'
+import PubCard from '../components/PubCard.astro'
+import LRCard from '../components/LRCard.astro'
+import CardMulti from '../components/CardMulti.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Label from '../components/Label.astro'
 import SkillLayout from '../components/SkillLayout.astro'
@@ -61,59 +64,155 @@ const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
 				Welcome! I teach classes in the <a href='https://analytics.georgetown.edu' target="_blank" style="text-decoration: underline;">Data Science and Analytics</a> program and <a href='https://mccourt.georgetown.edu/' target="_blank" style="text-decoration: underline;">McCourt School of Public Policy</a> at <b>Georgetown University</b>.
 			</p>
 			<p>
-				I received my PhD in Political Science from Columbia University in 2022, with a dissertation on quantitative approaches to studying the history of political thought. During the PhD I worked as an Adjunct Instructor in NYU's <a href='https://cds.nyu.edu/' target="_blank" style="text-decoration: underline;">Center for Data Science</a> and Research Assistant in Columbia's <a href='https://www.sipa.columbia.edu/' target="_blank" style="text-decoration: underline;">School of International and Public Affairs (SIPA)</a>.
+				I received my PhD in <b>Political Science</b> from <b>Columbia University</b> in 2022, with a dissertation on quantitative approaches to studying the history of political thought. During the PhD I worked as an Adjunct Instructor in NYU's <a href='https://cds.nyu.edu/' target="_blank" style="text-decoration: underline;">Center for Data Science</a> and Research Assistant in Columbia's <a href='https://www.sipa.columbia.edu/' target="_blank" style="text-decoration: underline;">School of International and Public Affairs (SIPA)</a>.
 			</p>
 			<p>
-				My research in <b>political science</b> mainly pertains to the history of political thought and what I call "computational political theory" (Natural Language Processing + Network Analysis + Political Theory); My research in <b>economics</b> focuses on empirical, text-analytic studies of monopsony and collective bargaining in modern and historical labor markets.
+				My research in <b>political science</b> mainly pertains to the history of political thought and what I call "computational political theory" (Natural Language Processing + Network Analysis + Political Theory)
+			</p>
+			<p>
+				My research in <b>economics</b> focuses on empirical, text-analytic studies of monopsony and collective bargaining in modern and historical labor markets.
 			</p>
 		</Section>
 
-		<Section title='Experience'>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				altText='Lorem, ipsum dolor sit'
+		<Section title='Publications'>
+			<PubCard
+				heading='Unsupervised Extraction of Workplace Rights and Duties from Collective Bargaining Agreements'
+				subheading='Elliott Ash, Jeff Jacobs, Bentley MacLeod, Suresh Naidu, and Dominik Stammbach'
+				date='Proceedings of the 20th IEEE International Conference on Data Mining -- International Workshop on Mining and Learning in the Legal Domain (ICDM-MLLD). 2020.'
 			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
+				<!-- <ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
 						molestiae laboriosam pariatur!
 
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
 					</li>
-				</ul>
-			</Card>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				</ul> -->
+			</PubCard>
+			<PubCard
+				heading='Monopsony in Online Labor Markets'
+				subheading='Arindrajit Dube, Jeff Jacobs, Suresh Naidu, and Siddharth Suri'
+				date='American Economic Review: Insights, (2)1: 33-46. 2020.'
 			/>
+			<PubCard
+				heading='How to Do Things with Translations: Cross-Lingual Phrase Embeddings for Translation Analysis'
+				subheading='Jeff Jacobs'
+				date='Ninth Annual Conference on New Directions in Analyzing Text as Data (TADA). 2018.'
+			/>
+			<PubCard
+				heading='Information Cartography: Creating Zoomable, Large-Scale Maps of Information'
+				subheading='Dafna Shahaf, Jaewon Yang, Caroline Suen, Jeff Jacobs, Heidi Wang, and Jure Leskovec'
+				date='Proceedings of the ACM International Conference on Knowledge Discovery and Data Mining (KDD), 1097-1105. 2013.'
+			/>
+			<PubCard
+				heading='Metaheuristic Approaches to Resource Scheduling in Heterogeneous Wireless Networks'
+				subheading='Cristy Duan, Honghao Gao, Jeff Jacobs, and Weixiang Wu'
+				date='Joint Mathematics Meetings (JMM). 2012.'
+			/>
+			<PubCard
+				heading='Evolving Musical Counterpoint: The Chronopoint Genetic Algorithm'
+				subheading='Jeff Jacobs and James Reggia'
+				date='Proceedings of the 2011 IEEE Congress on Evolutionary Computation, 11-16. 2011.'
+			/>
+
+
+
+
+
+
+<!-- 
+
+
+
+Dissertation
+"Our Word is Our Weapon": Text-Analyzing Wars of Ideas from the French Revolution to the First World War
+
+Defended on September 23, 2022
+
+Working Papers
+How to Do Things with Translations: Cross-Lingual Phrase Embeddings for Translation Analysis
+
+Last Updated September 1, 2018
+
+"Simultaneous and Systematic Abolition": Automated Content Analysis of the 1789 Cahiers de Doleances
+
+Last Updated June 1, 2018
+
+Invited Talks
+How to Do Things with Translations: Cross-Lingual Semantic Phrase Embeddings for Translation Analysis
+Feb 2021
+
+Theories of Translation Workshop
+
+Ohio State University, Columbus, OH, USA
+
+"Our Word is Our Weapon": Language, Resistance, and Revolution
+Nov 2019
+
+Columbia Natural Language Processing Lab
+
+Columbia University, New York, NY, USA
+
+Fi Hadal Habs: Text-Analyzing the Underground Communiques of the Palestinian Intifadas
+Oct 2018
+
+Critical Media and Digital Studies Workshop
+
+Columbia University, New York, NY, USA
+
+The Point is to Change It: Theoretical Innovation and Political Practice in the History of Marxism
+Jun 2018
+
+2018 Graduate Workshop in Computational Social Science
+
+Santa Fe Institute, Santa Fe, NM, USA
+
+Automated Content Analysis and the 1789 Cahiers de Doléances
+Jun 2018
+
+5th Annual Politics and History Conference
+
+University of Barcelona, Barcelona, Spain
+
+Word Embeddings: Can Vectors Encode Meaning?
+Feb 2018
+
+with Katy Gero, Harvard University
+
+NYC Digital Humanities Week
+
+Columbia University, New York, NY, USA -->
+
+
 		</Section>
 
 		<Section title='Education'>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+			<CardMulti
+				heading='Columbia University'
+				sub1="PhD in Political Science, Sep 2022"
+				sub2="MPhil in Political Science, May 2018"
+				sub3="MA in Political Science, May 2016"
 			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
+				<!-- <ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
 						molestiae laboriosam pariatur!
 
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
 					</li>
-				</ul>
-			</Card>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				</ul> -->
+			</CardMulti>
+			<CardMulti
+				heading='Stanford University'
+				sub1='MS in Computer Science, May 2014'
+			/>
+			<CardMulti
+				heading='University of Maryland'
+				sub1='BS in Computer Science, BS in Mathematics, BA in Economics, May 2012'
 			/>
 		</Section>
 
-		<Section title='Projects'>
+		<!-- <Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
 					href='https://www.google.com'
@@ -132,9 +231,9 @@ const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
 					class='w-full sm:w-1/2'
 				/>
 			</div>
-		</Section>
+		</Section> -->
 
-		<Section title='Certifications'>
+		<!-- <Section title='Certifications'>
 			<Card
 				as='a'
 				heading='Lorem ipsum, dolor sit amet consectetur adipisicing.'
@@ -149,13 +248,28 @@ const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
 				date='Mar 2029 - Mar 2032'
 				href='https://www.google.com'
 			/>
-		</Section>
+		</Section> -->
 
-		<Section title='Skills'>
+		<!-- <Section title='Skills'>
 			<SkillLayout title='Languages' skills={languages} />
 			<SkillLayout title='Frontend' skills={frontend} />
 			<SkillLayout title='Backend' skills={backend} />
 			<SkillLayout title='Others' skills={others} />
+		</Section> -->
+
+		<Section title='Links'>
+			<Card
+				as='a'
+				heading="Jeff's Second Brain"
+				subheading='For sporadic notes / ideas, grouped together using Obsidian.md'
+				href='https://jjacobs.me/notebooks'
+			/>
+			<Card
+				as='a'
+				heading='DailyAtrocity.US'
+				subheading='A daily calendar documenting the horrors rained down upon the rest of the world by the US'
+				href='https://dailyatrocity.us'
+			/>
 		</Section>
 	</div>
 </PageLayout>
